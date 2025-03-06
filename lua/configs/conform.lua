@@ -3,7 +3,7 @@ local options = {
         lua = { "stylua" },
         c = { "clang-format" },
         cpp = { "clang-format" },
-        ruby = { "rubocop" },
+        ruby = { "rufo" },
         eruby = { "erb_format" },
         -- go = { "gofumpt", "goimports-reviser", "golines" },
         -- haskell = { "fourmolu", "stylish-haskell" },
@@ -58,7 +58,7 @@ local options = {
 
     format_on_save = {
         -- These options will be passed to conform.format()
-        timeout_ms = 500,
+        timeout_ms = 1500,
         lsp_fallback = true,
     },
 }

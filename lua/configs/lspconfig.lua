@@ -8,7 +8,7 @@ local lspconfig = require "lspconfig"
 lspconfig.servers = {
     "lua_ls",
     "clangd",
-    "rubocop",
+    "ruby_lsp",
     -- "gopls",
     -- "hls",
     -- "ols",
