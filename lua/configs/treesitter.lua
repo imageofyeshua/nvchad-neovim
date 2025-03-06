@@ -6,6 +6,7 @@ local options = {
         "cpp",
         "fish",
         "ruby",
+        "erb",
         -- "go",
         -- "gomod",
         -- "gosum",

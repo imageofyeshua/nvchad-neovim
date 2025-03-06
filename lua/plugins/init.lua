@@ -3,7 +3,7 @@ return {
         "nvim-treesitter/nvim-treesitter",
         event = { "BufReadPre", "BufNewFile" },
         config = function()
-            require("configs.treesitter")
+            require "configs.treesitter"
         end,
     },
 
@@ -12,7 +12,7 @@ return {
         event = { "BufReadPre", "BufNewFile" },
         config = function()
             require("nvchad.configs.lspconfig").defaults()
-            require("configs.lspconfig")
+            require "configs.lspconfig"
         end,
     },
 
@@ -21,7 +21,7 @@ return {
         event = "VeryLazy",
         dependencies = { "nvim-lspconfig" },
         config = function()
-            require("configs.mason-lspconfig")
+            require "configs.mason-lspconfig"
         end,
     },
 
@@ -29,7 +29,7 @@ return {
         "mfussenegger/nvim-lint",
         event = { "BufReadPre", "BufNewFile" },
         config = function()
-            require("configs.lint")
+            require "configs.lint"
         end,
     },
 
@@ -38,7 +38,7 @@ return {
         event = "VeryLazy",
         dependencies = { "nvim-lint" },
         config = function()
-            require("configs.mason-lint")
+            require "configs.mason-lint"
         end,
     },
 
@@ -46,7 +46,7 @@ return {
         "stevearc/conform.nvim",
         event = "BufWritePre",
         config = function()
-            require("configs.conform")
+            require "configs.conform"
         end,
     },
 
@@ -55,7 +55,7 @@ return {
         event = "VeryLazy",
         dependencies = { "conform.nvim" },
         config = function()
-            require("configs.mason-conform")
+            require "configs.mason-conform"
         end,
     },
 }
